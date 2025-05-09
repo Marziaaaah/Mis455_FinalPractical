@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries Explorer</title>
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌎</text></svg>"
+        type="image/svg+xml">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <svg class="earth-logo" viewBox="0 0 24 24" width="48" height="48">
+                    <circle cx="12" cy="12" r="10" fill="#2563eb"></circle>
+                    <path d="M12,2 C6.48,2 2,6.48 2,12 s4.48,10 10,10 s10-4.48 10-10 S17.52,2 12,2" fill="#2563eb">
+                    </path>
+                    <path d="M12,2 C6.48,2 2,6.48 2,12 s4.48,10 10,10 s10-4.48 10-10 S17.52,2 12,2" stroke="#ffffff"
+                        stroke-width="0.5" fill="none"></path>
+                    <path d="M2,12 h20 M12,2 v20" stroke="#ffffff" stroke-width="0.5" opacity="0.7"></path>
+                    <path d="M4.93,4.93 c4.97-4.97 13.17-4.97 18.14,0 c-4.97,4.97-13.17,4.97-18.14,0" stroke="#ffffff"
+                        stroke-width="0.5" fill="none" opacity="0.7"></path>
+                    <path d="M4.93,19.07 c4.97,4.97 13.17,4.97 18.14,0 c-4.97-4.97-13.17-4.97-18.14,0" stroke="#ffffff"
+                        stroke-width="0.5" fill="none" opacity="0.7"></path>
+                </svg>
+                <h1>World Countries Explorer</h1>
+            </div>
+            <p>Search for detailed information about any country around the globe</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="countryInput" placeholder="Enter country name (e.g., Canada, Bangladesh)"
+                autocomplete="off">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="results" class="country-container">
+            <!-- Country results will appear here -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 World Countries Explorer</p> 
+            <p>Using REST Countries API by <a href="https://restcountries.com/" target="_blank">restcountries.com</a></p>
+            <p>Developed by Marzia Hossain</p>
+            
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
